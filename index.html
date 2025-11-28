@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- DESACTIVA EL COLOR AUTOMÁTICO EN iOS -->
+<meta name="format-detection" content="telephone=no">
+
 <title>Sendtinel</title>
 
 <!-- Fuente -->
@@ -16,7 +19,6 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 
-    /* ===== FONDO PREMIUM SENDTINEL ===== */
     background: radial-gradient(circle at top right,
                 rgba(255, 0, 102, 0.25) 0%,
                 rgba(13, 27, 61, 1) 45%),
@@ -24,7 +26,6 @@ body {
                 #0d1b3d 0%,
                 #131f3f 50%,
                 #0d1b3d 100%);
-
     background-size: cover;
     min-height: 100vh;
 
@@ -32,7 +33,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* TEXTURA PREMIUM SUAVE */
     background-image:
         radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
         radial-gradient(circle at top right,
@@ -108,9 +108,15 @@ h1 {
 /* TELÉFONOS */
 .phones {
     font-size: 16px;
-    color: #ffffff;
     font-weight: 500;
     margin-bottom: 28px;
+}
+
+/* ESTILO PARA TELÉFONOS BLANCOS */
+.phone-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* ICONOS SOCIALES */
@@ -137,10 +143,12 @@ h1 {
     align-items: center;
     gap: 14px;
     background: rgba(255,255,255,0.92);
-    padding: 16px 22px;
+    padding: 14px 20px;       /* reducido ligeramente */
     margin: 12px 0;
     border-radius: 16px;
-    font-size: 18px;
+
+    font-size: 15.5px;        /* NUEVA MEDIDA */
+
     text-decoration: none;
     color: #0d1b3d;
     font-weight: 600;
@@ -193,7 +201,9 @@ h1 {
 
         <!-- TELÉFONOS -->
         <div class="phones">
-            +51 955 556 619 &nbsp;•&nbsp; +51 957 326 185
+            <a href="tel:+51955556619" class="phone-link">+51 955 556 619</a>
+            &nbsp;•&nbsp;
+            <a href="tel:+51957326185" class="phone-link">+51 957 326 185</a>
         </div>
 
         <!-- REDES -->
@@ -227,7 +237,6 @@ h1 {
 
     </div>
 
-    <!-- FOOTER -->
     <div class="footer">
         © Sendtinel – Importaciones EE.UU. a Perú
     </div>
