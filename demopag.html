@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sendtinel</title>
+
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* ===== FONDO PREMIUM SENDTINEL ===== */
+    background: radial-gradient(circle at top right,
+                rgba(255, 0, 102, 0.25) 0%,
+                rgba(13, 27, 61, 1) 45%),
+                linear-gradient(160deg,
+                #0d1b3d 0%,
+                #131f3f 50%,
+                #0d1b3d 100%);
+
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* TEXTURA PREMIUM SUAVE */
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        radial-gradient(circle at top right,
+                rgba(255, 0, 102, 0.18) 0%, transparent 70%),
+        linear-gradient(160deg, #0d1b3d 0%, #131f3f 50%, #0d1b3d 100%);
+    background-size: 6px 6px, cover, cover;
+}
+
+/* CONTENEDOR CENTRAL */
+.wrapper {
+    width: 92%;
+    max-width: 430px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* TARJETA GLASS */
+.card {
+    background: rgba(255,255,255,0.14);
+    padding: 70px 30px 35px;
+    border-radius: 22px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+    position: relative;
+}
+
+/* LOGO */
+.logo-circle {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.85);
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+
+    margin-top: -55px;
+    margin-bottom: 10px;
+}
+
+/* TITULO */
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 8px 0 5px;
+    letter-spacing: -0.5px;
+}
+
+/* SUBTÍTULO */
+.subtitle {
+    font-size: 15px;
+    color: #dce0ee;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+
+/* BANDERAS */
+.flags {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+.flags img {
+    width: 44px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* TELÉFONOS */
+.phones {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+/* ICONOS SOCIALES */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+.socials img {
+    width: 34px;
+    opacity: 0.88;
+    transition: 0.2s;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+.socials img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* BOTONES PREMIUM */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.92);
+    padding: 16px 22px;
+    margin: 12px 0;
+    border-radius: 16px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0d1b3d;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.45);
+    transition: 0.25s;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.btn img {
+    width: 32px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #d9d9d9;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.45);
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="card">
+
+        <!-- LOGO -->
+        <img class="logo-circle" src="img/logo sendtinel.png" alt="Logo Sendtinel">
+
+        <h1>Sendtinel</h1>
+
+        <div class="subtitle">
+            Tu socio confiable en importaciones aéreas<br>
+            desde Estados Unidos hacia Perú.
+        </div>
+
+        <!-- BANDERAS -->
+        <div class="flags">
+            <img src="https://flagcdn.com/w40/us.png">
+            <img src="https://flagcdn.com/w40/pe.png">
+        </div>
+
+        <!-- TELÉFONOS -->
+        <div class="phones">
+            +51 955 556 619 &nbsp;•&nbsp; +51 957 326 185
+        </div>
+
+        <!-- REDES -->
+        <div class="socials">
+            <a href="https://www.instagram.com/sendtinel_?igsh=MXkxZjlyZTdtbXZnNQ==" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+            </a>
+            <a href="https://wa.link/9j9kgi" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+            </a>
+            <a href="https://www.tiktok.com/@sendtinel_peru?_r=1&_t=ZS-91lQrUZJ6vM" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+            </a>
+        </div>
+
+        <!-- BOTONES -->
+        <a class="btn" href="https://wa.link/9j9kgi" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+            Cotizar mi importación
+        </a>
+
+        <a class="btn" href="https://www.instagram.com/sendtinel_?igsh=MXkxZjlyZTdtbXZnNQ==" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+            Instagram Oficial
+        </a>
+
+        <a class="btn" href="https://www.tiktok.com/@sendtinel_peru?_r=1&_t=ZS-91lQrUZJ6vM" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+            Contenido en TikTok
+        </a>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © Sendtinel – Importaciones EE.UU. a Perú
+    </div>
+
+</div>
+
+</body>
+</html>
